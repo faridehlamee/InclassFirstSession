@@ -1,0 +1,14 @@
+@page
+@model Razor4602.Pages.Future
+@{
+    ViewData["Title"] = "Future";
+    string[] names = new string[]{"john", "Paul", "George", "Ringo"};
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    @foreach(string name in names){
+        <p>Hello @name</p>
+    }
+</div>
